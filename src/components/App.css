@@ -1,0 +1,25 @@
+.app{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.AddButtonWrapper{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex: 1 0 21%;
+}
+.AddButton{
+    height:200px;
+    width:200px;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.AddButton:hover{
+    border:2px solid red;
+    transition: 0.5s ease;
+    color:red;
+}
