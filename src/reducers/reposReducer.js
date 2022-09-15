@@ -2,14 +2,14 @@ const GET_TIMEZONE="GET_TIMEZONE"
 
 const defaultState={
     timezones:[],
-    isFetching:true,
+    loaded:false,
 }
 
 export default function  reposReducer(state=defaultState,action){
     switch (action.type){
         case GET_TIMEZONE:
             return{
-                ...state,
+                loaded:true,
                 timezones:action.payload
             }
         default:
